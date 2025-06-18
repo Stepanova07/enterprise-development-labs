@@ -9,12 +9,12 @@
         public int Id { get; set; }
 
         /// <summary>Номер билета (может содержать буквы и цифры)</summary>
-        public string TicketNumber { get; set; } = string.Empty; // Инициализация для избежания null
+        public string TicketNumber { get; set; } = string.Empty; //
 
         /// <summary>Рейс, на который оформлено бронирование</summary>
-        public Flight? Flight { get; set; } // Nullable, так как рейс может быть не задан
+        public Flight? Flight { get; set; }
 
         /// <summary>Клиент, оформивший бронирование</summary>
-        public Customer? Customer { get; set; } // Nullable, так как клиент может быть не задан
+        public Customer? Customer { get; set; } 
     }
 }
